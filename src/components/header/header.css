@@ -1,0 +1,120 @@
+header{
+    height:100vh ;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+ 
+.logo {
+        border-radius: 50%;
+        width: 16%;
+        position: absolute;
+        left: 25rem;
+        top: 0rem;
+        
+}
+ 
+
+/* CTA */
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* scocial */
+.header__scoials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    margin-left: 2rem;
+}
+
+
+.header__scoials:after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+/* IMAGE */
+
+.me{
+    background: linear-gradient(var(--color-primary),transparent);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden; 
+    padding: 5rem 1.5rem 1.5rem 1.5rem ;
+}
+
+/* SCROLL DOWN */
+
+.scroll_down
+{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-right: 2.3rem;
+}
+
+
+/* TABLET  */
+
+
+@media screen and(max-width: 1024px) {
+
+    header{
+        width: 100vh;
+    }
+
+    section{
+        margin-top: 6rem;
+    }
+}
+
+@media screen and(max-width:600px) {
+
+     header{
+        width: 100vh;
+    }
+
+    .header__scoials{
+    margin-left: 0.4rem;
+    }
+
+    .scroll_down
+     {
+             
+    margin-right: 0.5rem;
+}
+
+.logo{
+    width: 30%;;
+    top: 0.9rem;
+    left: 1.5rem;
+}
+
+
+
+}
